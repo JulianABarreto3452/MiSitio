@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #ffffff; /* Fondo blanco */
+      color: #000000; /* Texto negro */
+    }
+
+    /* Menú estilo Bootstrap */
+    nav {
+      background-color: #58B2AF; /* Color principal */
+    }
+
+    nav a {
+      color: #ffffff; /* Texto blanco */
+    }
+
+    .jumbotron {
+      background-image: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff; /* Texto blanco en el jumbotron */
+      padding: 100px; /* Ajustar según sea necesario */
+      margin-bottom: 0; /* Elimina el margen inferior */
+      position: relative;
+    }
+
+    .jumbotron::after {
+      content: "";
+      background: url('https://path-to-your-watermark-image.jpg') repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1; /* Ajusta la opacidad según sea necesario */
+    }
+
+    .content {
+      background-color: #ffffff; /* Fondo blanco */
+      padding: 20px; /* Ajustar según sea necesario */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <a class="navbar-brand" href="equipo.html">Equipo</a>
+    <a class="navbar-brand" href="noticias.html">Noticias</a>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Frase alusiva al tema del proyecto</h1>
+    <p class="lead">Descripción breve del proyecto</p>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <!-- Tres párrafos de texto -->
+    <p>Primer párrafo de texto.</p>
+    <p>Segundo párrafo de texto.</p>
+    <p>Tercer párrafo de texto.</p>
+
+    <!-- Video de YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K5pkkuiyRzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <!-- Bootstrap JS y Popper.js CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
